@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_background"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        android:id="@+id/check"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/warning"
+            android:layout_marginStart="130dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="账号或者密码不正确"
+            android:textColor="#FF0000"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="130dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="40dp"
+        android:text="账号"
+        android:textSize="20sp"
+        android:gravity="center"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/title_password"
+        android:layout_width="130dp"
+        android:layout_height="75dp"
+        android:text="密码"
+        android:layout_below="@id/title_name"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_toRightOf="@id/title_name"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        android:layout_toEndOf="@id/title_name" />
+
+    <EditText
+        android:id="@+id/pass_edit"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_toRightOf="@id/title_password"
+        android:layout_below="@+id/name_edit"
+        android:textSize="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        tools:ignore="MissingConstraints"
+        android:layout_toEndOf="@id/title_password"
+        android:layout_marginEnd="20dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_password"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="45dp"
+        android:paddingVertical="10dp"
+        android:text="登录"
+        android:textSize="22sp"
+        android:background="#66DD00"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="45dp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_login"
+        android:layout_below="@id/title_password"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:paddingVertical="10dp"
+        android:text="注册"
+        android:textSize="22sp"
+        android:background="#66DD00"
+        tools:ignore="MissingConstraints"
+        android:layout_toEndOf="@+id/btn_login"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        android:id="@+id/btn_createDatabase"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="10dp"
+        android:paddingVertical="10dp"
+        android:text="更新数据库"
+        android:textSize="22dp"
+        android:background="#66DD00"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

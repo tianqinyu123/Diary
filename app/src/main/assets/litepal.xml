@@ -1,0 +1,12 @@
+<litepal>
+    <dbname value="diary"/>
+
+    <version value="1"/>
+
+    <list>
+        <mapping class="com.diary.android.db.Users"/>
+        <mapping class="com.diary.android.db.Files"/>
+        <mapping class="com.diary.android.db.Friends"/>
+        <mapping class="com.diary.android.db.UserInfo"/>
+    </list>
+</litepal>
